@@ -1,9 +1,5 @@
 @charset "UTF-8";
 
-*{
-    margin: 0;
-    padding: 0;
-}
 
 /*
 Paleta de cores 
@@ -13,3 +9,48 @@ Paleta de cores
 #607744
 #e8d7ff
 */
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body, html{
+    background-color:#607744 ;
+    width: 100vw;
+    height: 100vh;
+}
+
+main{
+    position: relative;
+    height: 100vh;
+    width: 100vw;
+}
+
+
+section#login{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    transform: translate(-50%, -50%);
+    background-color:white;
+    width: 250px;
+    height: 500px;
+    border-radius: 25px;
+    box-shadow: 0px 0px  10px rgba(0, 0, 0, 0.432);
+}
+
+section#login > div#imagem{
+    background: #607744 url(../imagens/pexels-vitaly-gorbachev-15974646\ \(1\).jpg) no-repeat;
+    background-size: cover;
+    height: 200px;
+    display: block;
+}
+
+section#login > div#formulario{
+    display: block;
+    padding: 15px;
+}
